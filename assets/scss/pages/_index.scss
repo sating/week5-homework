@@ -1,3 +1,164 @@
-.index-title {
-  font-size: 100px;
+*, *::after, *::before {
+  box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  // font-family: 'Lato', sans-serif !important;
+  // font-family: 'Noto Sans TC', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto Mono', monospace;
+  background-color: #FFFFFF;
+  color: #212529;
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+}
+
+// .container {
+//   width: 1296px;
+//   margin: 0 auto;
+// }
+
+//---
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+}
+
+header {
+  width: 296px;
+  background-color: #F8F9FA;
+}
+
+.logo {
+  background-image: url("../images/logo-ANSWER.svg");
+  width: 150px;
+  height: 40px;
+  margin: 32px 0 32px 32px;
+}
+
+.menu {
+  margin-left: 32px;
+  li a {
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center; 
+    .material-symbols-outlined {
+      margin-right: 16px;
+    }
+  }
+}
+
+.main-title {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0 48px 0 0;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  .material-symbols-outlined {
+    margin-right: 8px;
+    color: $primary;
+  }
+}
+
+.member-info {
+  img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  .name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .email {
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C757D;
+  }
+  
+}
+
+table {
+  .material-symbols-outlined {
+    cursor: pointer;
+  }
+}
+
+.modal-view-close {
+  z-index: 9;
+}
+
+.modal-view-img {
+  width: 141px;
+  height: 141px;
+  object-fit: cover;
+  margin-right: 24px;
+}
+
+.modal-view-content {
+  .accordion-button {
+    // width: 100%;
+    padding: 0;
+    span {
+      display: block;
+      background-color: $gray-100;
+      padding: 4px 8px;
+    }
+  }
+  .accordion-body {
+    padding: 32px 0 0;
+  }
+  
+}
+
+.pagination {
+  .page-item {
+    &:first-child, &:last-child {
+      .page-link {
+        display: flex;
+        justify-content: center;
+        padding: 3px;
+        color: $primary;
+      }
+    }
+  }
+
+}
+
+table {
+  thead {
+    tr {
+      th {
+        padding: 4px !important;
+        border-color: $gray-900;
+        .material-symbols-outlined {
+          color: $primary;
+          vertical-align: bottom;
+        }
+      }
+    }
+  }
+}
+
