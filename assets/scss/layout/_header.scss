@@ -1,4 +1,69 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header {
+  width: 296px;
+  background-color: #F8F9FA;
+}
+
+.logo {
+  background-image: url("../images/logo-ANSWER.svg");
+  width: 150px;
+  height: 40px;
+  margin: 32px 0 32px 32px;
+}
+
+.menu {
+  li {
+    a {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center; 
+      padding-left: 32px;
+      height: 32px;
+      .material-symbols-outlined {
+        margin-right: 16px;
+      }
+    }
+    &.active a {
+      color: $primary;
+      border-left: 4px solid $primary;
+      
+    }
+  }
+}
+
+.main-title {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0 48px 0 0;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  .material-symbols-outlined {
+    margin-right: 8px;
+    color: $primary;
+  }
+}
+
+.member-info {
+  img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  .name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .email {
+    font-size: 14px;
+    line-height: 24px;
+    color: #6C757D;
+  }
+  
 }
